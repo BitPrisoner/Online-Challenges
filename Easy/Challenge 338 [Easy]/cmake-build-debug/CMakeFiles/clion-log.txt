@@ -1,4 +1,4 @@
-"C:\Program Files\JetBrains\CLion 2017.2.2\bin\cmake\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" "D:\DailyProgrammer\Challenge 338 [Easy]"
+"C:\Program Files\JetBrains\CLion 2017.2.2\bin\cmake\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" "D:\DailyProgrammer\Online-Challenges\Easy\Challenge 338 [Easy]"
 -- The C compiler identification is GNU 6.3.0
 -- The CXX compiler identification is GNU 6.3.0
 -- Check for working C compiler: C:/Program Files (x86)/mingw-w64/i686-6.3.0-posix-dwarf-rt_v5-rev1/mingw32/bin/gcc.exe
@@ -15,4 +15,4 @@
 -- Detecting CXX compile features - done
 -- Configuring done
 -- Generating done
--- Build files have been written to: D:/DailyProgrammer/Challenge 338 [Easy]/cmake-build-debug
+-- Build files have been written to: D:/DailyProgrammer/Online-Challenges/Easy/Challenge 338 [Easy]/cmake-build-debug

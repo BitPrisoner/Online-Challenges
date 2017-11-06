@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "D:/DailyProgrammer/Challenge 338 [Easy]/main.cpp" "D:/DailyProgrammer/Challenge 338 [Easy]/cmake-build-debug/CMakeFiles/Challenge_338__Easy_.dir/main.cpp.obj"
+  "D:/DailyProgrammer/Online-Challenges/Easy/Challenge 338 [Easy]/main.cpp" "D:/DailyProgrammer/Online-Challenges/Easy/Challenge 338 [Easy]/cmake-build-debug/CMakeFiles/Challenge_338__Easy_.dir/main.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
