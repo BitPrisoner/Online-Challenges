@@ -10,7 +10,6 @@ import UIKit
 
 class ArtistTableViewCell: UITableViewCell {
 
-  @IBOutlet weak var bioLabel: UIlabe!
-  
+  @IBOutlet weak var bioLabel: UILabel!
 
 }

@@ -46,11 +46,13 @@ extension ArtistListViewController: UITableViewDataSource {
   }
   
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-    let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
+    
+    guard let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! ArtistTableViewCell
     
     let artist = artists[indexPath.row]
     
-    cell.textLabel?.text = artist.bio
+    cell.bioLabel.text = artist.bio
+    cell.bioLabel.textColor = UIColor(white: 114/255, alpha: 1)
     
     return cell
   }
