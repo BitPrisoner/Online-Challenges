@@ -28,31 +28,29 @@
                                 <color key="separatorColor" red="0.44705882352941173" green="0.44705882352941173" blue="0.44705882352941173" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="50" id="cvZ-Xf-8Mf">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="Cell" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="50" id="cvZ-Xf-8Mf" customClass="ArtistTableViewCell" customModule="Artistry" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="383" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cvZ-Xf-8Mf" id="tZj-Bl-H4M" customClass="ArtistTableViewCell" customModule="Artistry" customModuleProvider="target">
                                             <rect key="frame" x="0.0" y="0.0" width="383" height="49.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bio" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C0w-tx-vzO">
-                                                    <rect key="frame" x="8" y="0.0" width="367" height="49.5"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bio" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6hI-RZ-Y61">
+                                                    <rect key="frame" x="16" y="8" width="351" height="33.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="bottom" secondItem="C0w-tx-vzO" secondAttribute="bottom" id="8Me-bj-gkL"/>
-                                                <constraint firstItem="C0w-tx-vzO" firstAttribute="top" secondItem="tZj-Bl-H4M" secondAttribute="top" id="G9g-zH-Vdk"/>
-                                                <constraint firstItem="C0w-tx-vzO" firstAttribute="leading" secondItem="tZj-Bl-H4M" secondAttribute="leading" constant="8" id="Kn0-Bf-8L1"/>
-                                                <constraint firstAttribute="trailing" secondItem="C0w-tx-vzO" secondAttribute="trailing" constant="8" id="hH8-f3-hzN"/>
+                                                <constraint firstItem="6hI-RZ-Y61" firstAttribute="leading" secondItem="tZj-Bl-H4M" secondAttribute="leadingMargin" constant="8" id="Axm-Jb-XOf"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="6hI-RZ-Y61" secondAttribute="bottom" id="PnV-TO-Blx"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="6hI-RZ-Y61" secondAttribute="trailing" constant="8" id="Vn6-ju-YGm"/>
+                                                <constraint firstItem="6hI-RZ-Y61" firstAttribute="top" secondItem="tZj-Bl-H4M" secondAttribute="topMargin" id="srL-Gb-zij"/>
                                             </constraints>
-                                            <connections>
-                                                <outlet property="bioLabel" destination="C0w-tx-vzO" id="Oum-ap-Tfk"/>
-                                            </connections>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="bioLabel" destination="6hI-RZ-Y61" id="nSi-yM-KAU"/>
                                             <segue destination="P2C-XC-Cyp" kind="show" identifier="ShowArtist" id="F6a-xh-OQB"/>
                                         </connections>
                                     </tableViewCell>
