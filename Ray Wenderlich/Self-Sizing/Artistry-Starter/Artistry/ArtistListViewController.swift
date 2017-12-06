@@ -34,13 +34,22 @@ class ArtistListViewController: UIViewController {
     tableView.rowHeight = UITableViewAutomaticDimension
     tableView.estimatedRowHeight = 140
   }
-  
-  override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-    if let destination = segue.destination as? ArtistDetailViewController,
-        let indexPath = tableView.indexPathForSelectedRow {
-      destination.selectedArtist = artists[indexPath.row]
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // alert()
+        if let destination = segue.destination as? ArtistDetailViewController,
+            let indexPath = tableView.indexPathForSelectedRow {
+            destination.selectedArtist = artists[indexPath.row]
+        }
     }
-  }
+    
+    func alert() {
+        print("Hello World")
+        let alert = UIAlertController(title: "Token", message: "Enter code", preferredStyle: UIAlertControllerStyle.alert)
+        alert.addAction(UIAlertAction(title: "Enter", style: .default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
+    }
+    
 }
 
 extension ArtistListViewController: UITableViewDataSource {
